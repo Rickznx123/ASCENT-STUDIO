@@ -49,7 +49,7 @@ export function DeckPanel() {
         <div className="flex items-center gap-2">
           <span className="h-2 w-2 rounded-full bg-pink" />
           <span className="font-mono text-[0.7rem] uppercase tracking-wider text-ink-500">
-            campanha · ao vivo
+            exemplo ilustrativo
           </span>
         </div>
         <span className="rounded-full border border-line px-2.5 py-1 font-mono text-[0.65rem] text-ink-500">

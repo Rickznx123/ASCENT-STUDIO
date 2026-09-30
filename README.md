@@ -34,12 +34,11 @@ src/
     Nav.tsx          -> header fixo com blur ao rolar
     Hero.tsx         -> headline + CTAs + DeckPanel
     DeckPanel.tsx    -> elemento de assinatura: mockup de dashboard animado
-    LogoStrip.tsx    -> area "Empresas"
     HowItWorks.tsx   -> 4 etapas (01-04)
     Services.tsx     -> 4 cards de servico
+    Plans.tsx        -> planos de conteudo e trafego
     WhyUs.tsx        -> diferenciais ("Por que a Ascent")
     Portfolio.tsx    -> grid de projetos com hover
-    Testimonials.tsx -> depoimentos
     FinalCta.tsx     -> chamada final
     Footer.tsx       -> contato e redes
     Logo.tsx         -> marca (icone "seta-A" + wordmark)
@@ -49,13 +48,9 @@ src/
 
 Marquei no codigo (comentarios `// Placeholder`) tudo que e provisorio:
 
-- **`LogoStrip.tsx`** - hoje mostra os nomes dos clientes em texto. Troque por SVGs
-  reais dos logos quando tiver.
 - **`Portfolio.tsx`** - os 4 cards usam thumbnails em gradiente (roxo/rosa) no lugar
   de video real. Troque `grad` por uma imagem/poster real ou embed de video, e o
   `href="#"` pelo link do projeto.
-- **`Testimonials.tsx`** - depoimentos de exemplo. Troque pelos textos reais dos
-  clientes (Janaina, Trairao, Helena Doris, etc.).
 - **`Footer.tsx` / `FinalCta.tsx`** - o link do WhatsApp esta como `https://wa.me/55`;
   troque pelo seu numero completo (`https://wa.me/55XXXXXXXXXXX`), e o e-mail de
   contato se for diferente de `contato@ascentstudio.com.br`.

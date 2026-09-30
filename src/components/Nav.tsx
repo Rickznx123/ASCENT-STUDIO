@@ -5,7 +5,7 @@ import { WHATSAPP_URL, trackLead } from "@/lib/track";
 import { Wordmark } from "./Logo";
 
 const LINKS = [
-  { href: "#cases", label: "Cases" },
+  { href: "#planos", label: "Planos" },
   { href: "#como-funciona", label: "Como funciona" },
   { href: "#servicos", label: "Serviços" },
   { href: "#como-trabalhamos", label: "Como trabalhamos" },

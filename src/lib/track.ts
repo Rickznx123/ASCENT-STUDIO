@@ -13,6 +13,10 @@ export const WHATSAPP_URL =
     "Olá! Vim através do site da ASCENT STUDIO e gostaria de solicitar um orçamento."
   );
 
+export function buildWhatsAppUrl(message: string) {
+  return "https://wa.me/5566999765693?text=" + encodeURIComponent(message);
+}
+
 export function trackLead(source: string) {
   if (typeof window === "undefined") return;
   const w = window as Win;

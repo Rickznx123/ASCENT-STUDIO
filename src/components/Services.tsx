@@ -1,33 +1,57 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Clapperboard, LineChart, Sparkles, LayoutTemplate, Search } from "lucide-react";
+import {
+  ChartNoAxesCombined,
+  Clapperboard,
+  GitBranch,
+  MapPin,
+  PanelsTopLeft,
+  Search,
+  Target,
+  Video,
+} from "lucide-react";
 
 const SERVICES = [
   {
     icon: Clapperboard,
-    title: "Produção Audiovisual",
-    desc: "Vídeos institucionais e comerciais gravados e editados para transmitir autoridade de marca.",
+    title: "Reels com a nossa blogueira",
+    desc: "Ela visita o seu negócio e grava o conteúdo em parceria com o seu perfil. Sua marca aparece com uma cara nova, sem você precisar ir para frente da câmera.",
   },
   {
-    icon: LineChart,
-    title: "Gestão de Meta Ads",
-    desc: "Campanhas estruturadas, segmentadas e otimizadas continuamente com base em dados reais.",
+    icon: Video,
+    title: "Reels com o seu negócio",
+    desc: "Planejamos e editamos os vídeos com o dono ou alguém da equipe. O público conhece quem está por trás da marca e ganha confiança antes do primeiro contato.",
+  },
+  {
+    icon: Target,
+    title: "Meta Ads",
+    desc: "Anúncios no Instagram e no Facebook mostrados para pessoas com o perfil do seu cliente, para você aparecer diante de quem tem chance real de comprar.",
   },
   {
     icon: Search,
     title: "Google Ads",
-    desc: "Campanhas estratégicas na Rede de Pesquisa, Display, YouTube e Performance Max para conectar sua empresa a pessoas que já estão procurando pelo seu produto ou serviço.",
+    desc: "Você aparece quando alguém pesquisa pelo seu produto ou serviço. São pessoas que já estão procurando.",
   },
   {
-    icon: Sparkles,
-    title: "Criativos para anúncios",
-    desc: "Peças pensadas para deter o scroll e comunicar a proposta certa para cada público.",
+    icon: MapPin,
+    title: "Google Meu Negócio",
+    desc: "Seu negócio no Google Maps e nas buscas da cidade, com fotos, horários e avaliações, para quem procura por perto.",
   },
   {
-    icon: LayoutTemplate,
-    title: "Landing Pages de Conversão",
-    desc: "Páginas rápidas e objetivas, construídas para transformar atenção em contato qualificado.",
+    icon: PanelsTopLeft,
+    title: "Instagram organizado",
+    desc: "Bio e perfil ajustados, posts semanais e stories para o perfil passar profissionalismo e transformar visita em contato.",
+  },
+  {
+    icon: GitBranch,
+    title: "Estratégia, copy e funil",
+    desc: "Textos e ofertas que explicam o valor do que você vende, remarketing para quem já viu seu anúncio e landing page objetiva que leva ao WhatsApp.",
+  },
+  {
+    icon: ChartNoAxesCombined,
+    title: "Relatórios e otimização",
+    desc: "Acompanhamos os números, mostramos o que está funcionando e ajustamos as campanhas. Você sabe de onde vêm os contatos.",
   },
 ];
 
@@ -40,11 +64,11 @@ export function Services() {
             Serviços
           </p>
           <h2 className="text-3xl font-bold tracking-tight text-ink-100 sm:text-4xl">
-            Tudo o que conecta sua marca ao público certo.
+            O que cada serviço faz pelo seu negócio.
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 2xl:grid-cols-5">
+        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {SERVICES.map((s, i) => {
             const Icon = s.icon;
             return (
