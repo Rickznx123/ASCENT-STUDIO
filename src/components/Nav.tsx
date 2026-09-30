@@ -1,9 +1,11 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { WHATSAPP_URL, trackLead } from "@/lib/track";
 import { Wordmark } from "./Logo";
 
 const LINKS = [
+  { href: "#cases", label: "Cases" },
   { href: "#como-funciona", label: "Como funciona" },
   { href: "#servicos", label: "Serviços" },
   { href: "#como-trabalhamos", label: "Como trabalhamos" },
@@ -48,9 +50,10 @@ export function Nav() {
           </nav>
 
           <a
-            href="https://wa.me/5566999765693?text=Olá! Vim através do site da ASCENT STUDIO e gostaria de solicitar um orçamento."
+            href={WHATSAPP_URL}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => trackLead("nav")}
             className="shrink-0 rounded-full bg-ink-100 px-5 py-2 text-sm font-semibold text-void transition-transform hover:scale-[1.03] active:scale-[0.98]"
           >
             Solicitar orçamento

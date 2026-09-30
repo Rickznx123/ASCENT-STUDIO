@@ -1,5 +1,6 @@
-import { Mail, MapPin, MessageCircle } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 import { Wordmark } from "./Logo";
+import { FooterWhatsAppLink } from "./FooterWhatsAppLink";
 
 function InstagramIcon({ className = "h-4 w-4 text-ink-500" }: { className?: string }) {
   return (
@@ -34,15 +35,7 @@ export function Footer() {
             <InstagramIcon />
             @ascentstudioaf
           </a>
-          <a
-            href="https://wa.me/5566999765693?text=Olá! Vim através do site da ASCENT STUDIO e gostaria de solicitar um orçamento."
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2.5 transition-colors hover:text-ink-100"
-          >
-            <MessageCircle className="h-4 w-4 text-ink-500" />
-            (66) 99976-5693
-          </a>
+          <FooterWhatsAppLink />
           <a
             href="mailto:contato@ascentstudio.com.br"
             className="flex items-center gap-2.5 transition-colors hover:text-ink-100"

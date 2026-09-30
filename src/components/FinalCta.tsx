@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import { WHATSAPP_URL, trackLead } from "@/lib/track";
 
 export function FinalCta() {
   return (
@@ -30,9 +31,10 @@ export function FinalCta() {
           className="mt-10"
         >
           <a
-            href="https://wa.me/5566999765693?text=Olá! Vim através do site da ASCENT STUDIO e gostaria de solicitar um orçamento."
+            href={WHATSAPP_URL}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => trackLead("final-cta")}
             className="group inline-flex items-center gap-2.5 rounded-full bg-gradient-to-r from-purple to-pink px-8 py-4 text-base font-semibold text-white transition-transform hover:scale-[1.03] active:scale-[0.98]"
           >
             Solicitar orçamento

@@ -2,6 +2,7 @@
 
 import { motion, type Variants } from "framer-motion";
 import { ArrowRight, PlayCircle } from "lucide-react";
+import { WHATSAPP_URL, trackLead } from "@/lib/track";
 import { DeckPanel } from "./DeckPanel";
 
 const EASE = [0.16, 1, 0.3, 1] as const;
@@ -44,7 +45,7 @@ export function Hero() {
           >
             <span className="h-1.5 w-1.5 rounded-full bg-purple" />
             <span className="font-mono text-xs tracking-wide text-ink-300">
-              Produção Audiovisual + Meta Ads
+              Audiovisual + Meta Ads + Google Ads
             </span>
           </motion.div>
 
@@ -66,8 +67,8 @@ export function Hero() {
             custom={2}
             className="mt-6 max-w-lg text-lg leading-relaxed text-ink-300"
           >
-            Criamos vídeos estratégicos e campanhas no Meta Ads para conectar
-            sua empresa às pessoas certas.
+            Criamos vídeos estratégicos e campanhas no Meta Ads e Google Ads
+            para conectar sua empresa às pessoas certas.
           </motion.p>
 
           <motion.div
@@ -78,9 +79,10 @@ export function Hero() {
             className="mt-10 flex flex-col gap-3.5 sm:flex-row sm:items-center"
           >
             <a
-              href="https://wa.me/5566999765693?text=Olá! Vim através do site da ASCENT STUDIO e gostaria de solicitar um orçamento."
+              href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => trackLead("hero")}
               className="group inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-purple to-pink px-6 py-3.5 text-sm font-semibold text-white transition-transform hover:scale-[1.02] active:scale-[0.98]"
             >
               Solicitar orçamento
